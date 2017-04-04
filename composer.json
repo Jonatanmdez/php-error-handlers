@@ -1,5 +1,5 @@
 {
-    "name": "Jonatanmdez/php-error-handlers",
+    "name": "jonatanmdez/php-error-handlers",
     "description": "PHP Library that includes wrappers for popular error handling services",
     "keywords": ["cakephp", "error", "exception"],
     "homepage": "https://github.com/Jonatanmdez/php-error-handlers",
