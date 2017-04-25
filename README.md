@@ -77,6 +77,7 @@ The following are built-in handlers with their configuration options:
     - `apiKey`: (required | default: `null`)
 - `SentryHandler`: Uses the official [sentry raven php](https://github.com/getsentry/raven-php) package.
     - `dsn`: (required | default: `null`)
+    - `release`: (optional | default: `null`)
 
 ### Handler and Exception Modification
 
