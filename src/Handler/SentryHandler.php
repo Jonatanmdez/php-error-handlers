@@ -45,6 +45,7 @@ class SentryHandler extends AbstractHandler implements HandlerInterface
         if($release){
             $client->setRelease($release);
         }
+        $client->install();
        
           
         return $client;
