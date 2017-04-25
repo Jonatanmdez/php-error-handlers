@@ -38,6 +38,15 @@ class SentryHandler extends AbstractHandler implements HandlerInterface
         }
 
         $client = new Raven_Client($dsn);
+        
+        /* Include the release for Sentry */
+        
+        $release = $this->config('release');
+        if($release){
+            $client->setRelease($release);
+        }
+       
+          
         return $client;
     }
 }
