@@ -45,6 +45,13 @@ class SentryHandler extends AbstractHandler implements HandlerInterface
         if($release){
             $client->setRelease($release);
         }
+        
+        /* Include the user email */
+        $email = $this->config('email');
+        if($email){
+           $client->user_context(array('email' => $email));
+        }
+        
         $client->install();
        
           
